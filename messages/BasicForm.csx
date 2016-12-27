@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Bot.Builder.FormFlow;
 
-public enum ActionOptions { SaySomething = 1, LookAround, Dance};
+public enum ActionOptions { SaySomething = 1, LookAround, Dance, FireDeathRay};
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
 [Serializable]
