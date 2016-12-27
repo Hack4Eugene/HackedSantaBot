@@ -14,7 +14,7 @@ public class BasicForm
     public ActionOptions Action { get; set; }
 
     [Prompt("What should Santa Say?")]
-    public string? Words { get; set; }
+    public string Words { get; set; }
 
     public static IForm<BasicForm> BuildForm()
     {
