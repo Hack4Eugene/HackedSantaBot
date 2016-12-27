@@ -33,7 +33,7 @@ public class MainDialog : IDialog<BasicForm>
             var form = await result;
             if (form != null)
             {
-                await context.PostAsync("Thanks for telling Santa what to do! Just type anything to restart it.");
+                await context.PostAsync("Thanks for giving santa Santa Commands!  If you are not in the room with him it's sort of pointless, but visit http://hackedsanta.com for more info. Chat to restart.");
             }
             else
             {

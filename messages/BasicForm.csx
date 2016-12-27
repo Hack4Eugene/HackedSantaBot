@@ -1,8 +1,7 @@
 using System;
 using Microsoft.Bot.Builder.FormFlow;
 
-public enum ActionOptions { Dance = 1, Talk, Scan};
-public enum SongOptions { Red = 1, White, Blue };
+public enum ActionOptions { SaySomething = 1, LookAround, Dance};
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
 [Serializable]
@@ -14,7 +13,9 @@ public class BasicForm
     [Prompt("What Would you like Santa to do? {||}")]
     public ActionOptions Action { get; set; }
 
-   
+    [Prompt("What should Santa Say?")]
+    public string? Words { get; set; }
+
     public static IForm<BasicForm> BuildForm()
     {
         // Builds an IForm<T> based on BasicForm
